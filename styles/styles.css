@@ -179,7 +179,7 @@ section {
   width: 65%;
   height: 100%;
   /*background-color: var(--color-secondary);*/
-  background: var(--left-header-bg-color);
+  background-color: var(--left-header-bg-color);
   background: var(--left-header-bg-gradient);
   position: absolute;
   left: 0;
