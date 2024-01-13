@@ -178,9 +178,10 @@ section {
   transition: all 0.4s ease-in-out;
   width: 65%;
   height: 100%;
-  /*background-color: var(--color-secondary);*/
+  /*background-color: var(--color-secondary);
   background-color: var(--left-header-bg-color);
-  background: var(--left-header-bg-gradient);
+  background: var(--left-header-bg-gradient);*/
+  background: url(../img/bg1.jpg);
   position: absolute;
   left: 0;
   top: 0;
