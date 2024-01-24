@@ -19,8 +19,8 @@
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
-  --left-header-bg-color: rgb(5,127,56);
-  --left-header-bg-gradient: linear-gradient(90deg, rgba(5,127,56,1) 0%, rgba(11,161,73,1) 25%, rgba(35,187,99,1) 50%);
+  --left-header-bg-color: rgb(7, 146, 65);
+  --left-header-bg-gradient: url(../img/trianglify-background.svg) right bottom no-repeat;
 }
 
 .light-mode {
@@ -36,7 +36,7 @@
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
   --left-header-bg-color: #5A96F9;
-  --left-header-bg-gradient: linear-gradient(90deg, rgba(65,104,167,1) 0%, rgba(78,124,199,1) 25%, rgba(90,150,249,1) 50%);
+  --left-header-bg-gradient: url(../img/hero-bg-light.svg) bottom center no-repeat;
 }
 
 body {
@@ -179,9 +179,9 @@ section {
   width: 65%;
   height: 100%;
   /*background-color: var(--color-secondary);
-  background-color: var(--left-header-bg-color);
-  background: var(--left-header-bg-gradient);*/
-  background: url(../img/bg1.jpg);
+  background-color: var(--left-header-bg-color);*/
+  background: var(--left-header-bg-gradient);
+  /*background: url(../img/hero-bg-light.svg) right bottom no-repeat;*/
   position: absolute;
   left: 0;
   top: 0;
