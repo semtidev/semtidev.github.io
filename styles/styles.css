@@ -37,8 +37,8 @@
   --color-grey-4: #454e56;
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
-  --color-icon: #191D2B;
-  --color-icon-active: #FFFFFF;
+  --color-icon: #FFFFFF;
+  --color-icon-active: #191D2B;
   --left-header-bg-color: #5A96F9;
   --left-header-bg-gradient: url(../img/hero-bg-light.svg) bottom center no-repeat;
 }
