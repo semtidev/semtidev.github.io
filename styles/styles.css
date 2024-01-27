@@ -199,8 +199,8 @@ section {
 .theme-btn {
   top: 5%;
   right: 3%;
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: var(--color-mode);
   cursor: pointer;
