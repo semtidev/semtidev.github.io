@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="main-content">
+<body id="app" class="main-content">
     <header class="container header active" id="home">
         <div class="header-content">
             <div class="left-header">
@@ -28,7 +28,7 @@
             <div class="right-header">
                 <span class="hi">Hola, no soy un robot...</span>
                 <h1 class="name">
-                    soy <span>Tony Machado</span>.
+                    soy <span>{{ name }}</span>.
                 </h1>
                 <div class="typed-container">
                     <font class="typed-text-output d-inline"></font>
@@ -663,29 +663,36 @@
     </main>
 
     <div class="controls">
-        <div class="control active-btn" data-id="home" >
+        <div class="control tooltip active-btn" data-id="home" >
             <i class="fas fa-home"></i>
+            <span class="tooltiptext">Semtidev</span>
         </div>
-        <div class="control" data-id="about">
+        <div class="control tooltip" data-id="about">
             <i class="fas fa-user"></i>
+            <span class="tooltiptext">Acerca de...</span>
         </div>
-        <div class="control" data-id="portfolio">
+        <div class="control tooltip" data-id="portfolio">
             <i class="fas fa-briefcase"></i>
+            <span class="tooltiptext">Portfolio</span>
         </div>
-        <div class="control" data-id="blogs">
+        <div class="control tooltip" data-id="blogs">
             <i class="far fa-newspaper"></i>
+            <span class="tooltiptext">Artículos</span>
         </div>
-        <div class="control" data-id="contact">
+        <div class="control tooltip" data-id="contact">
             <i class="fas fa-envelope-open"></i>
+            <span class="tooltiptext">Contacto</span>
         </div>
     </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
+    <div class="theme-btn" v-on:click.stop="changeMode">
+        <i class="fas" :class="modeIcon"></i>
     </div>
     
     <!-- JavaScript libraries -->
     <script src="lib/jquery/jquery-3.4.1.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="vue-app.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

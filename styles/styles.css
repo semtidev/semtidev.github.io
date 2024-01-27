@@ -19,6 +19,8 @@
   --color-grey-6: #12181b;
   --color-icon: #191D2B;
   --color-icon-active: #FFFFFF;
+  --color-mode: #ddedfd;
+  --color-mode-icon: #fca605;
   --br-sm-2: 45px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
   --left-header-bg-color: rgb(7, 146, 65);
@@ -38,10 +40,13 @@
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
   --color-icon: #FFFFFF;
+  --color-mode: #353c43;
+  --color-mode-icon: #fff;
   --color-icon-active: #191D2B;
   --left-header-bg-color: #5A96F9;
   --left-header-bg-gradient: url(../img/hero-bg-light.svg) bottom center no-repeat;
 }
+
 
 body {
   background-color: var(--color-primary);
@@ -49,6 +54,54 @@ body {
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--left-header-bg-color)   /*#3c414c*/;
+  color: #fff;
+  text-align: center;
+  padding: 5px 3px;
+  border-radius: 6px;
+  font-size: 16px !important;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--left-header-bg-color) transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 a {
@@ -146,10 +199,10 @@ section {
 .theme-btn {
   top: 5%;
   right: 3%;
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  background-color: var(--color-grey-4);
+  background-color: var(--color-mode);
   cursor: pointer;
   position: fixed;
   display: flex;
@@ -163,7 +216,7 @@ section {
 }
 .theme-btn i {
   font-size: 1.4rem;
-  color: var(--color-grey-2);
+  color: var(--color-mode-icon);
   pointer-events: none;
 }
 
