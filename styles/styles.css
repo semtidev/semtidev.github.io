@@ -762,6 +762,9 @@ section {
   border-radius: 50%;
   padding: 1rem;
 }
+.main-btn .btn-icon {
+  padding: 11px 15px;
+}
 .main-btn::before {
   content: "";
   position: absolute;
