@@ -8,6 +8,7 @@ createApp({
         const changeMode = () => modeIcon.value = (modeIcon.value == 'mdi-white-balance-sunny') ? 'mdi-weather-night' : 'mdi-white-balance-sunny'
         const openModal = () => {
             Swal.fire({
+                width: '50%',
                 title: 'Error!',
                 text: 'Do you want to continue',
                 icon: 'error',
