@@ -8,11 +8,22 @@ createApp({
         const changeMode = () => modeIcon.value = (modeIcon.value == 'mdi-white-balance-sunny') ? 'mdi-weather-night' : 'mdi-white-balance-sunny'
         const openModal = () => {
             Swal.fire({
-                width: '50%',
-                title: 'Error!',
-                text: 'Do you want to continue',
-                icon: 'error',
-                confirmButtonText: 'Cool'
+                title: 'Detalle del proyecto',
+                text: 'Detalle del proyecto',
+                showClass: {
+                    popup: `
+                      animate__animated
+                      animate__fadeInUp
+                      animate__faster
+                    `
+                  },
+                  hideClass: {
+                    popup: `
+                      animate__animated
+                      animate__fadeOutDown
+                      animate__faster
+                    `
+                  }
             });
         }
         

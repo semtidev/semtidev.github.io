@@ -814,7 +814,16 @@ section {
   padding-left: 0;
 }
 
+/*  SWAL POPUPS  */
+.swal2-modal {
+  width: 55% !important;
+}
+
 @media screen and (max-width: 600px) {
+  .swal2-modal {
+    width: 90% !important;
+  }
+
   header {
     padding: 0 !important;
   }
@@ -949,6 +958,9 @@ section {
   }
 }
 @media screen and (max-width: 1432px) {
+  .swal2-modal {
+    width: 70% !important;
+  }
   .container {
     padding: 7rem 11rem;
   }
@@ -979,6 +991,9 @@ section {
   }
 }
 @media screen and (max-width: 1250px) {
+  .swal2-modal {
+    width: 75% !important;
+  }
   .blogs {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 6rem;
@@ -993,6 +1008,9 @@ section {
   }
 }
 @media screen and (max-width: 660px) {
+  .swal2-modal {
+    width: 90% !important;
+  }
   .blogs {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1002,6 +1020,10 @@ section {
   }
 }
 @media screen and (max-width: 1070px) {
+  .swal2-modal {
+    width: 85% !important;
+  }
+  
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1020,6 +1042,10 @@ section {
   }
 }
 @media screen and (max-width: 970px) {
+  .swal2-modal {
+    width: 90% !important;
+  }
+
   .container {
     padding: 7rem 6rem;
   }
@@ -1062,6 +1088,10 @@ section {
   }
 }
 @media screen and (max-width: 700px) {
+  .swal2-modal {
+    width: 90% !important;
+  }
+
   .container {
     padding: 7rem 3rem;
   }
