@@ -353,6 +353,7 @@ section {
   flex-direction: column;
 }
 .about-container .right-about .about-item .abt-text .large-text {
+  font-family: "Roboto", sans-serif;
   font-size: 3rem;
   font-weight: 700;
   color: var(--color-secondary);
@@ -401,6 +402,7 @@ section {
 }
 .about-stats .progress-bars .progress-bar .prog-title {
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 .about-stats .progress-bars .progress-bar .progress-con {
@@ -408,6 +410,7 @@ section {
   align-items: center;
 }
 .about-stats .progress-bars .progress-bar .progress-con .prog-text {
+  font-family: "Roboto", sans-serif;
   color: var(--color-grey-2);
 }
 .skill-category {
@@ -507,6 +510,7 @@ section {
 }
 .timeline-item a {
   color: var(--color-secondary) !important;
+  margin-top: 7px;
 }
 .timeline-item .fas, .main-btn:hover, .main-btn .fas {
   color: var(--color-icon) !important;
@@ -533,6 +537,7 @@ section {
   display: inline-block;
   font-size: 0.8rem;
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 .timeline .timeline-item h5 {
@@ -1379,7 +1384,7 @@ body > div.pp.portfolio-popup.open > div.pp-details.active > div > div.pp-title 
   border-radius: 30px;
   font-size: 16px;
   font-weight: 500;
-  color: var(--color-grey-2);
+  color: var(--color-grey0);
   top: 15px;
   height: 40px;
   line-height: 40px;
