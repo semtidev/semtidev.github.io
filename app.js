@@ -23,6 +23,13 @@
         });
     }
 
+    function bodyScrollbarShow (active) {
+        if (active)
+            $("body").removeClass('not-scrollbar');
+        else
+            $("body").addClass('not-scrollbar');
+    }
+
     // Portfolio popup
 
     portfolioItemsContainer = document.querySelector(".portfolio-items"),
@@ -63,6 +70,7 @@
 
     closeBtn.addEventListener("click", () =>{
         popupToggle();
+        bodyScrollbarShow(true);
         if(projectDetailsContainer.classList.contains("active")){
             popupDetailsToggle();
         }
@@ -70,7 +78,7 @@
 
     function popupToggle() {
         popup.classList.toggle("open");
-        //bodyScrollingToggle();
+        bodyScrollbarShow(false);
     }
 
     function popupSlideshow() {
