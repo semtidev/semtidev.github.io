@@ -472,10 +472,10 @@ section {
   width: 80%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .wordpress {
-  width: 80%;
+  width: 90%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .mautic {
-  width: 80%;
+  width: 70%;
 }
 
 .stat-title {
@@ -1357,7 +1357,7 @@ body > div.pp.portfolio-popup.open > div.pp-details.active > div > div.pp-title 
   width: auto;
   height: auto;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .portfolio-popup .pp-main{
