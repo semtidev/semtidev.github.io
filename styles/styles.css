@@ -124,12 +124,12 @@ body {
   transition: opacity 0.3s;
 }
 .tooltip-contrast .tooltiptext {
-  width: 120px;
+  width: 100px;
   bottom: unset;
   top: 125%;
   left: 50%;
-  margin-left: -60px;
-  font-size: 13px;
+  margin-left: -50px;
+  font-size: 14px !important;
   background-color: var(--color-white);
   color: var(--color-primary);
 }
@@ -1311,7 +1311,7 @@ section {
   color: var(--color-grey0);
 }
 .portfolio-popup .pp-title .pp-project-category,
-.portfolio-popup .pp-title .pp-project-model,
+.portfolio-popup .pp-title .pp-project-mode,
 .portfolio-popup .pp-title .pp-project-rol {
   color: var(--color-secondary);
 }
