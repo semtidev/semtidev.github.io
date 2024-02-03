@@ -123,7 +123,7 @@
         popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
 
         const mode = portfolioItems[itemIndex].getAttribute("data-mode");
-        popup.querySelector(".pp-project-mode").innerHTML = mode.split("-").join(" ");
+        popup.querySelector(".pp-project-mode").innerHTML = mode;
 
         const rol = portfolioItems[itemIndex].getAttribute("data-rol");
         popup.querySelector(".pp-project-rol").innerHTML = rol.split("-").join(" ");

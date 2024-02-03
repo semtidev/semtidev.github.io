@@ -25,6 +25,7 @@
   --color-icon-active: #FFFFFF;
   --color-mode: #ddedfd;
   --color-mode-icon: #fca605;
+  --color-contrast: #FFFFFF;
   --br-sm-2: 45px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
   --left-header-bg-color: rgb(7, 146, 65);
@@ -34,7 +35,7 @@
 .light-mode {
   --color-primary: #FFFFFF;
   --color-secondary: #67a1ff;
-  --color-white: #454e56;
+  --color-white: #3a4249;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #6c7983;
@@ -46,6 +47,7 @@
   --color-icon: #FFFFFF;
   --color-mode: #353c43;
   --color-mode-icon: #fff;
+  --color-contrast: #191D2B;
   --color-icon-active: #191D2B;
   --left-header-bg-color: #5A96F9;
   --left-header-bg-gradient: url(../img/hero-bg-light.svg) bottom center no-repeat;
@@ -97,14 +99,13 @@ body {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: var(--left-header-bg-color)   /*#3c414c*/;
+  background-color: var(--left-header-bg-color);
   color: #fff;
   text-align: center;
   padding: 5px 3px;
@@ -122,6 +123,16 @@ body {
   opacity: 0;
   transition: opacity 0.3s;
 }
+.tooltip-contrast .tooltiptext {
+  width: 120px;
+  bottom: unset;
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 13px;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
 
 /* Tooltip arrow */
 .tooltip .tooltiptext::after {
@@ -133,6 +144,14 @@ body {
   border-width: 5px;
   border-style: solid;
   border-color: var(--left-header-bg-color) transparent transparent transparent;
+}
+.tooltip-contrast .tooltiptext::after {
+  bottom: 100%;  /* At the top of the tooltip */
+  top: unset;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-color: transparent transparent var(--color-white) transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -594,13 +613,13 @@ section {
 }
 .portfolios .portfolio-item .hover-items h3 {
   font-size: 1.5rem;
-  color: var(--color-white);
+  color: var(--color-contrast);
   margin-bottom: 10px;
 }
 .portfolios .portfolio-item .hover-items h5 {
   font-size: 16px;
   font-weight: 500;
-  color: var(--color-white);
+  color: var(--color-contrast);
   margin-bottom: 1.5rem;
 }
 .portfolios .portfolio-item .hover-items .icons {
@@ -633,7 +652,7 @@ section {
 }
 
 .portfolio-item:hover .hover-items {
-  opacity: .95;
+  opacity: .97;
   transform: scale(1);
 }
 
@@ -1384,7 +1403,7 @@ body > div.pp.portfolio-popup.open > div.pp-details.active > div > div.pp-title 
   border-radius: 30px;
   font-size: 16px;
   font-weight: 500;
-  color: var(--color-grey0);
+  color: var(--color-secondary);
   top: 15px;
   height: 40px;
   line-height: 40px;
