@@ -129,7 +129,7 @@ body {
   top: 125%;
   left: 50%;
   margin-left: -50px;
-  font-size: 14px !important;
+  font-size: 13px !important;
   background-color: var(--color-white);
   color: var(--color-primary);
 }
@@ -1365,6 +1365,7 @@ body > div.pp.portfolio-popup.open > div.pp-details.active > div > div.pp-title 
 
 .portfolio-popup .info ul li a{
   color: var(--skin-color);
+  text-decoration: underline !important;
 }
 
 .portfolio-popup .info ul li:last-child{
