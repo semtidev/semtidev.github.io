@@ -924,7 +924,7 @@ section {
 
   .header-content .left-header .image {
     margin: 0 auto;
-    width: 90%;
+    /*width: 90%;*/
   }
 
   .controls {
