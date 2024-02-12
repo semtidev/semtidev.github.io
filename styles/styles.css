@@ -1131,7 +1131,7 @@ section {
     display: none;
   }
   .left-header .image {
-    width: 90% !important;
+    /*width: 90% !important;*/
     margin: 0 auto !important;
   }
 
