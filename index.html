@@ -13,7 +13,22 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="lib/nodes/nodes.js"></script>
+    <script type="text/javascript">
+        var nodesjs = new NodesJs({
+            id: 'canvas',
+            width: window.innerWidth,
+            height: window.innerHeight,
+            particleSize: 2,
+            lineSize: 1,
+            particleColor: [125, 132, 156, 0.9],
+            lineColor: [125, 132, 156],
+            number: window.hasOwnProperty('orientation') ? 30: 100,
+            speed: 20
+        });
+    </script>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
@@ -1229,7 +1244,6 @@
     <script src="lib/typed/typed.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="vue.global.prod.js"></script>
-    <script src="lib/nodes/script.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
