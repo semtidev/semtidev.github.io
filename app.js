@@ -6,7 +6,7 @@
         height: window.innerHeight,
         particleSize: 2,
         lineSize: 1,
-        particleColor: [125, 132, 156, 0.9],
+        particleColor: [125, 132, 156, 0.5],
         lineColor: [125, 132, 156],
         number: window.hasOwnProperty('orientation') ? 30: 100,
         speed: 15
