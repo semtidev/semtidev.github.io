@@ -1,4 +1,17 @@
 (function () {
+    // nodes animation
+    var nodesjs = new NodesJs({
+        id: 'canvas',
+        width: window.innerWidth,
+        height: window.innerHeight,
+        particleSize: 2,
+        lineSize: 1,
+        particleColor: [125, 132, 156, 0.9],
+        lineColor: [125, 132, 156],
+        number: window.hasOwnProperty('orientation') ? 30: 100,
+        speed: 15
+    });
+
     [...document.querySelectorAll(".control")].forEach(button => {
         button.addEventListener("click", function() {
             document.querySelector(".active-btn").classList.remove("active-btn");
