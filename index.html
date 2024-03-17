@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Nodes animation -->
     <script src="lib/nodes/nodes.js"></script>
     <!-- Vue framework -->
@@ -21,6 +22,9 @@
 
 </head>
 <body id="app" class="main-content">
+    <a href="https://wa.me/5355047718?text=Hola+Tony+he+visto+tu+CV" target=”_blank” class="whatsapp-btn">
+        <i class="mdi mdi-whatsapp"></i>
+    </a>
     <header class="container header active" id="home">
         <canvas id="canvas" width="100%" height="100%"></canvas>
         <div class="header-content">
@@ -1205,22 +1209,22 @@
             <i class="mdi mdi-24px mdi-home"></i>
             <span class="tooltiptext">Semtidev</span>
         </div>
-        <div class="control tooltip" data-id="about">
-            <i class="mdi mdi-24px mdi-account"></i>
-            <span class="tooltiptext">Acerca de...</span>
-        </div>
         <div class="control tooltip" data-id="portfolio">
             <i class="mdi mdi-24px mdi-briefcase-variant"></i>
             <span class="tooltiptext">Portfolio</span>
         </div>
+        <div class="control tooltip" data-id="about">
+            <i class="mdi mdi-24px mdi-account"></i>
+            <span class="tooltiptext">Acerca de...</span>
+        </div>        
         <div class="control tooltip" data-id="blogs">
             <i class="mdi mdi-24px mdi-newspaper"></i>
             <span class="tooltiptext">Artículos</span>
         </div>
-        <div class="control tooltip" data-id="contact">
+        <!--<div class="control tooltip" data-id="contact">
             <i class="mdi mdi-24px mdi-email"></i>
             <span class="tooltiptext">Contacto</span>
-        </div>
+        </div>-->
     </div>
     <div class="theme-btn" v-on:click.stop="changeMode">
         <i class="mdi mdi-24px" :class="modeIcon"></i>
