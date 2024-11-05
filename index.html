@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Semtidev</title>
+    <!-- Libraries Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- Site style -->
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Nodes animation -->
+    <script src="lib/nodes/nodes.js"></script>
+    <!-- Vue framework -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body id="app" class="main-content">
+    <a href="https://wa.me/5355047718?text=Hola+Tony+he+visto+tu+CV" target=”_blank” class="whatsapp-btn">
+        <i class="mdi mdi-whatsapp"></i>
+    </a>
+    <header class="container header active" id="home">
+        <canvas id="canvas" width="100%" height="100%"></canvas>
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/hero-blur.jpg" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <span class="hi">Hola, no soy un robot...</span>
+                <h1 class="name">
+                    soy <span>{{ name }}</span>.
+                </h1>
+                <div class="typed-container">
+                    <font class="typed-text-output d-inline"></font>
+                    <span class="typed-text d-none">Ingeniero Informático, Desarrollador Web Full Stack, Desarrollador Front End, Desarrollador Back End</span>
+                </div>
+                <p>
+                    Amo convertir diseños e ideas en hermosas, amigables y funcionales aplicaciones y portales web. Con más de una década de experiencia en la industria del software, continúo aprendiendo, compartiendo y creciendo.
+                </p>
+                <div class="btn-con">
+                    <a href="#" class="main-btn">
+                        <span class="btn-text">Descargar CV</span>
+                        <span class="btn-icon"><i class="mdi mdi-24px mdi-cloud-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>Acerca de <span>mi</span><span class="bg-text">trayectoria</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Trayectoria</h4>
+                    <p>
+                        Desde mi egreso universitario inicié un recorrido por el sector empresarial de mi región donde desempeñé varios roles del Desarrollo y Administración de portales y aplicaciones en plataforma web. <br /> <br /> 
+                        A partir del año 2017 me inicio en la modalidad de trabajo remoto colaborando con equipos de trabajo dentro y fuera del país como desarrollador web para empresas radicadas en el Caribe, LATAM, EE.UU. y Europa.
+                    </p>
+                    <div class="btn-con">
+                        <a href="#" class="main-btn">
+                            <span class="btn-text">Descargar CV</span>
+                            <span class="btn-icon"><i class="mdi mdi-24px mdi-cloud-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">10+</p>
+                            <p class="small-text">Años de <br /> experiencia</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">8+</p>
+                            <p class="small-text">Empresas <br /> Beneficiadas</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">15+</p>
+                            <p class="small-text">Projectos <br /> Completados</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">100+</p>
+                            <p class="small-text">Usuarios <br /> Satisfechos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">Habilidades técnicas</h4>
+                <h5 class="skill-category">Front End</h5>
+                <br>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">html (+10 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">css (+10 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">javascript (+10 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Bootstrap (+5 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="bootstrap"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">JQuery (+10 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span class="jquery"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">ExtJS 4 (+5 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span class="jquery"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">VueJS (+2 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="vue"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">REACT (+6 meses)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">50%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="skill-category">Back End</h5>
+                    <br>
+                    <div class="progress-bar">
+                        <p class="prog-title">PHP (+10 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="php"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">LARAVEL (+6 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span class="laravel"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Symfony (+1 año)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">65%</p>
+                            <div class="progress">
+                                <span class="symfony"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">NodeJS (+6 meses)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">50%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="skill-category">CMS / CRM</h5>
+                    <br>
+                    <div class="progress-bar">
+                        <p class="prog-title">Wordpress (+5 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span class="wordpress"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Mautic (+1 año)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="mautic"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="skill-category">Control de versiones</h5>
+                    <br>
+                    <div class="progress-bar">
+                        <p class="prog-title">GIT (+5 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="git"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">GITHUB (+5 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="git"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="skill-category">Gestión de proyectos</h5>
+                    <br>
+                    <div class="progress-bar">
+                        <p class="prog-title">Jira (+5 años)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="git"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Asana (+1 año)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="git"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">Línea de tiempo profesional</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="mdi mdi-24px mdi-briefcase-variant"></i>
+                    </div>
+                    <p class="tl-duration">2022 - presente</p>
+                    <h5>Desarrollador Web Fullstack<span> - Fluxforce</span></h5>
+                    <p>
+                        Empresa española de servicios de automatización de marketing digital para PYMEs.<br>
+                        <a href="https://fluxforce.com/" target="_blank">https://fluxforce.com/</a>
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="mdi mdi-24px mdi-briefcase-variant"></i>
+                    </div>
+                    <p class="tl-duration">2021 - 2022</p>
+                    <h5>Desarrollador Web Back End<span> - Bits Americas</span></h5>
+                    <p>
+                        Compañía colombiana de servicios de software especializado en el area de LATAM.<br>
+                        <a href="https://www.bitsamericas.com/es" target="_blank">https://www.bitsamericas.com/es</a>
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="mdi mdi-24px mdi-briefcase-variant"></i>
+                    </div>
+                    <p class="tl-duration">2020 - 2022</p>
+                    <h5>Desarrollador Web Full Stack<span> - Digital Sailer</span></h5>
+                    <p>
+                        Empresa panameña al servicio de garantizar equipos de talentos para proyectos de software en LATAM.<br>
+                        <a href="https://digitalsailer.com/en/home/" target="_blank">https://digitalsailer.com</a>
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="mdi mdi-24px mdi-briefcase-variant"></i>
+                    </div>
+                    <p class="tl-duration">2015 - 2021</p>
+                    <h5>Desarrollador Web Full Stack<span> - Semti</span></h5>
+                    <p>
+                        Servicio freelancer de desarrollo de Sitios y Aplicaciones web para empresas y agencias.<br>
+                        <a href="https://semtidev.github.io" target="_blank">https://semtidev.github.io</a>
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="mdi mdi-24px mdi-briefcase-variant"></i>
+                    </div>
+                    <p class="tl-duration">2017 - 2019</p>
+                    <h5>Desarrollador Web Full Stack<span> - Carricay</span></h5>
+                    <p>
+                        Servicios de desarrollo de software a la medida / Diseño y Fotografía / Comunicación. <br>
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="mdi mdi-24px mdi-briefcase-variant"></i>
+                    </div>
+                    <p class="tl-duration">2008 - 2015</p>
+                    <h5>Desarrollador Web Full Stack<span> - Nicarotec</span></h5>
+                    <p>
+                        Empresa cubana de servicios de Automática, Electricidad, Mecánica, Geolología y Montages.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container portfolio-section" id="portfolio">
+            <div class="main-title">
+                <h2>Mi <span>Portfolio</span><span class="bg-text">Proyectos</span></h2>
+            </div>
+            <p class="port-text">
+                Algunos de mis proyectos, y otros donde he participado.
+            </p>
+            <div class="portfolios portfolio-items">
+                <div class="portfolio-item" 
+                    data-category="aplicación-web"
+                    data-mode="freelancer"
+                    data-rol="desarrollador-full-stack">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/tcp.contable/image-1.jpg" 
+                                data-screenshots="img/projects/tcp.contable/image-2.jpg, 
+                                    img/projects/tcp.contable/image-3.jpg,
+                                    img/projects/tcp.contable/image-4.jpg,
+                                    img/projects/tcp.contable/image-5.jpg,
+                                    img/projects/tcp.contable/image-6.jpg,
+                                    img/projects/tcp.contable/image-7.jpg">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">TCP.Contable</h3>
+                            <h5>Sistema de Contabilidad Simplificada</h5>
+                            <div class="icons">
+                                <a href="https://github.com/semtidev/TCP.Contable" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-github"></i>
+                                    <span class="tooltiptext">Visitar Código</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                            <div class="participation">Total</div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>Sistema de Contabilidad simplificada para trabajadores por cuenta propia (TCP), que gestiona las Entradas, Salidas, Modelos, Comprobantes, Inventario del patrimonio y ejecicios contables más comunes y fiscalizados. Cuenta, además, con una base legal que asesora a sus usuarios en el correcto ejecicio de sus actividades económicas respectivas.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Enero 2020</span></li>
+                                    <li>Cliente - <span>TCP, Cuba</span></li>
+                                    <li>Tecnologías - <span>HTML, CSS, JS, ExtJS 4, Laravel 8, MySQL</span></li>
+                                    <li>Web - <span>Privada</span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+                <div class="portfolio-item" 
+                    data-category="aplicación-web"
+                    data-mode="freelancer"
+                    data-rol="desarrollador-full-stack">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/semti.garantia/image-1.png" 
+                                data-screenshots="img/projects/semti.garantia/image-1.1.png,
+                                    img/projects/semti.garantia/image-2.png, 
+                                    img/projects/semti.garantia/image-3.png,
+                                    img/projects/semti.garantia/image-4.png,
+                                    img/projects/semti.garantia/image-5.png,
+                                    img/projects/semti.garantia/image-6.png,
+                                    img/projects/semti.garantia/image-7.png,
+                                    img/projects/semti.garantia/image-8.png,
+                                    img/projects/semti.garantia/image-9.png,
+                                    img/projects/semti.garantia/image-10.png">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">Semti Garantía</h3>
+                            <h5> Gestión de Garantía en Proyectos Hoteleros</h5>
+                            <div class="icons">
+                                <a href="https://github.com/semtidev/STG" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-github"></i>
+                                    <span class="tooltiptext">Visitar Código</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>Gestión de Garantía en Proyectos Hoteleros con seguimiento a las Solicitudes de Defectación de toda la red hotelera y sus procesos de solución, fondo habitacional disponible, informes de cierres de períodos, ejecución del presupuesto de garantía y métricas sobre el proceso productivo. El sistema se soporta sobre las estructuras de proyectos y sus objetos de obra, permitiendo la identificación y localización de todas las incidencias.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Diciembre 2015</span></li>
+                                    <li>Cliente - <span>A.E.I. UCM-BBI, Cuba</span></li>
+                                    <li>Tecnologías - <span>HTML, CSS, JS, ExtJS 4, PHP, MSSQL</span></li>
+                                    <li>Web - <span>Privada</span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+                <div class="portfolio-item" 
+                    data-category="aplicación-web"
+                    data-mode="empleado"
+                    data-rol="desarrollador-full-stack">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/phnet.calidad/image-1.png" 
+                                data-screenshots="img/projects/phnet.calidad/image-2.png, 
+                                    img/projects/phnet.calidad/image-3.png,
+                                    img/projects/phnet.calidad/image-4.png,
+                                    img/projects/phnet.calidad/image-5.png,
+                                    img/projects/phnet.calidad/image-6.png,
+                                    img/projects/phnet.calidad/image-7.png,
+                                    img/projects/phnet.calidad/image-8.png,
+                                    img/projects/phnet.calidad/image-9.png">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">PHnet Calidad</h3>
+                            <h5> Gestión de Calidad en Proyectos Hoteleros</h5>
+                            <div class="icons">
+                                <a href="https://github.com/semtidev/PHnet.Calidad" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-github"></i>
+                                    <span class="tooltiptext">Visitar Código</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>Gestión del Sistema de Calidad en Proyectos Hoteleros con seguimiento a los Equipos de Metrología y sus planes de calibración, Encuestas a Clientes internos y externos. Análisis de encuestas y los Informes emitidos para control interno y el órgano superior. Se realizan importaciones de informaciones generadas en MSExcel y exportación en formato PDF para todos los informes.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Noviembre 2021</span></li>
+                                    <li>Cliente - <span>Proyecto Hotelero Centro Histórico La Habana, Cuba</span></li>
+                                    <li>Tecnologías - <span>HTML, CSS, JS, Bootstrap, ExtJS 4, Laravel 8, MSSQL</span></li>
+                                    <li>Web - <span>Privada</span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+                <div class="portfolio-item" 
+                    data-category="portal-web"
+                    data-mode="colaborador"
+                    data-rol="desarrollador-back-end">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/fluxforce.com/image-1.png" 
+                                data-screenshots="img/projects/fluxforce.com/image-2.png, 
+                                    img/projects/fluxforce.com/image-3.png,
+                                    img/projects/fluxforce.com/image-4.png,
+                                    img/projects/fluxforce.com/image-5.png,
+                                    img/projects/fluxforce.com/image-6.png">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">FluxForce.com</h3>
+                            <h5>Plataforma de Marketing Automation</h5>
+                            <div class="icons">
+                                <a href="https://fluxforce.com" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-web"></i>
+                                    <span class="tooltiptext">Visitar Web</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>Todas tus herramientas de Marketing Digital en una. FluxForce es una plataforma de Marketing Automation diseñada para empresas que buscan resultados efectivos a corto plazo, mediante el lanzamiento de campañas de marketing multicanal, utilizando workflows automatizados listos para usar y plantillas prediseñadas.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Noviembre 2022</span></li>
+                                    <li>Cliente - <span>Fluxforce, España</span></li>
+                                    <li>Tecnologías - <span>Laravel 8, MySQL</span></li>
+                                    <li>Web - <span><a href="https://fluxforce.com/" target="_blank">fluxforce.com</a></span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+                <div class="portfolio-item" 
+                    data-category="aplicación-web"
+                    data-mode="colaborador"
+                    data-rol="desarrollador-full-stack">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/fluxforce.crm/image-1.png" 
+                                data-screenshots="img/projects/fluxforce.crm/image-2.png, 
+                                    img/projects/fluxforce.crm/image-3.png,
+                                    img/projects/fluxforce.crm/image-4.png,
+                                    img/projects/fluxforce.crm/image-5.png,
+                                    img/projects/fluxforce.crm/image-6.png">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">FluxForce CRM</h3>
+                            <h5>Plataforma de Marketing Automation</h5>
+                            <div class="icons">
+                                <a href="https://api.fluxforce.com/onboarding" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-web"></i>
+                                    <span class="tooltiptext">Visitar Web</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>FluxForce CRM es una plataforma de Marketing Automation diseñada para empresas que buscan resultados efectivos a corto plazo, mediante el lanzamiento de campañas de marketing multicanal, utilizando workflows automatizados listos para usar y plantillas prediseñadas. Gestiona el seguimiento a tus leads a través de Email, Whatsapp y SMS impulsando la converción de la mayor cantidad de ventas en tu negocio.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Noviembre 2022</span></li>
+                                    <li>Cliente - <span>Fluxforce, España</span></li>
+                                    <li>Tecnologías - <span>HTML, CSS, JS, Bootstrap, jQuery, Mautic, MySQL</span></li>
+                                    <li>Web - <span><a href="https://api.fluxforce.com/onboarding" target="_blank">api.fluxforce.com/onboarding</a></span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+                <div class="portfolio-item" 
+                    data-category="portal-web"
+                    data-mode="colaborador"
+                    data-rol="desarrollador-full-stack">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/digital.sailer/image-1.png" 
+                                data-screenshots="img/projects/digital.sailer/image-2.png, 
+                                    img/projects/digital.sailer/image-3.png,
+                                    img/projects/digital.sailer/image-4.png,
+                                    img/projects/digital.sailer/image-5.png">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">DigitalSailer.com</h3>
+                            <h5>Talento a la Medida</h5>
+                            <div class="icons">
+                                <a href="https://digitalsailer.com/" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-web"></i>
+                                    <span class="tooltiptext">Visitar Web</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>DigitalSailer.com es la imagen de un gran equipo de expertos que te acompañan en el proceso de desarrollo de proyectos de software y servicios basados en nube. Entre sus servicios destacan: Arquitectura de Nube, Desarrollos de Proyectos, Equipos a la Medida, COntratación Nearshore.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Junio 2021</span></li>
+                                    <li>Cliente - <span>Digital Sailer, Panamá</span></li>
+                                    <li>Tecnologías - <span>HTML, CSS, JS, Wordpress, MySQL</span></li>
+                                    <li>Web - <span><a href="https://digitalsailer.com" target="_blank">digitalsailer.com</a></span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+                <div class="portfolio-item" 
+                    data-category="reservas-online"
+                    data-mode="colaborador"
+                    data-rol="desarrollador-full-stack">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/samanainn.com/image-1.png" 
+                                data-screenshots="img/projects/samanainn.com/image-2.png, 
+                                    img/projects/samanainn.com/image-3.png,
+                                    img/projects/samanainn.com/image-4.png,
+                                    img/projects/samanainn.com/image-5.png,
+                                    img/projects/samanainn.com/image-6.png,
+                                    img/projects/samanainn.com/image-7.png,
+                                    img/projects/samanainn.com/image-8.png">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">Samanainn.com</h3>
+                            <h5>Reservas Online de vacaciones de lujo</h5>
+                            <div class="icons">
+                                <a href="https://samanainn.com" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-web"></i>
+                                    <span class="tooltiptext">Visitar Web</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>Samanainn.com es el sitio ideal de reservas para el paraiso tropical Samaná, en Republica Dominicana. Con una amplia y exquisita oferta de lujo de Vehículos, Casas, Hoteles, Eventos y Experiencias naturales. Expertos en garantizar a sus clientes unas vacaciones de lujo convirtiendo su viaje en una experiencia inolvidable.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Junio 2022</span></li>
+                                    <li>Cliente - <span>Samanainn, República Dominicana</span></li>
+                                    <li>Tecnologías - <span>HTML, CSS, JS, BookingCore, MySQL</span></li>
+                                    <li>Web - <span><a href="https://samanainn.com" target="_blank">samanainn.com</a></span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+                <div class="portfolio-item" 
+                    data-category="aplicación-web"
+                    data-mode="colaborador"
+                    data-rol="desarrollador-back-end">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/tigo/image-1.png" 
+                                data-screenshots="img/projects/tigo/image-2.png, 
+                                    img/projects/tigo/image-3.png">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">Tigo Business Online</h3>
+                            <h5>Gestion Online de Servicios fijos y móviles</h5>
+                            <div class="icons">
+                                <a href="https://micuentab2b.tigo.com.co" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-web"></i>
+                                    <span class="tooltiptext">Visitar Web</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>Tigo Business Online es la plataformavpara el pago de los servicios fijos y móviles de todo tipo de clientes (PYMEs, Compañías, Gobierno, Personas naturales, etc.) a nivel nacional en los paises que reciben los servicios de Tigo en el área de LATAM. Cada país cuenta con su propia plataforma desarrollada a la medida.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Julio 2021</span></li>
+                                    <li>Cliente - <span>Bits Américas, Colombia</span></li>
+                                    <li>Tecnologías - <span>AngularJS, Drupal, MySQL</span></li>
+                                    <li>Web - <span><a href="https://micuentab2b.tigo.com.co" target="_blank">micuentab2b.tigo.com.co</a></span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+                <div class="portfolio-item" 
+                    data-category="aplicación-web"
+                    data-mode="colaborador"
+                    data-rol="desarrollador-full-stack">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/semtinel/image-1.png" 
+                                data-screenshots="img/projects/semtinel/image-2.png,
+                                    img/projects/semtinel/image-3.png, 
+                                    img/projects/semtinel/image-4.png,
+                                    img/projects/semtinel/image-5.png,
+                                    img/projects/semtinel/image-6.png,
+                                    img/projects/semtinel/image-7.png,
+                                    img/projects/semtinel/image-8.png,
+                                    img/projects/semtinel/image-9.png">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">Semtinel</h3>
+                            <h5>Plataforma de Gestión Corporativa</h5>
+                            <div class="icons">
+                                <a href="https://github.com/semtidev/semtinel" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-github"></i>
+                                    <span class="tooltiptext">Visitar Código</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>Semtinel es una plataforma en desarrollo que gestionará los principales procesos productivos de la red hotelera en la Asociación Económica Internacional UCM-BBI, tales como: Convenios, RRHH, Producción, Planificación, Logística, etc. Actualmente implementa el subsistema de Logística para el Polo Habana.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Enero 2024</span></li>
+                                    <li>Cliente - <span>A.E.I. UCM-BBI, Cuba</span></li>
+                                    <li>Tecnologías - <span>HTML, CSS, JS, Bootstrap, Vue, Laravel, Postgres</span></li>
+                                    <li>Web - <span>Privada</span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+                <div class="portfolio-item" 
+                    data-category="aplicación-web"
+                    data-mode="colaborador"
+                    data-rol="desarrollador-full-stack">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/phnet.compras/image-1.png" 
+                                data-screenshots="img/projects/phnet.compras/image-2.png,
+                                    img/projects/phnet.compras/image-3.png, 
+                                    img/projects/phnet.compras/image-4.png,
+                                    img/projects/phnet.compras/image-5.png,
+                                    img/projects/phnet.compras/image-6.png">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">PHnet Compras</h3>
+                            <h5>Gestión de Compras nacionales/importación</h5>
+                            <div class="icons">
+                                <a href="https://github.com/semtidev/PHnet.Compras" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-github"></i>
+                                    <span class="tooltiptext">Visitar Código</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>PHnet Compras es un sistema que gestiona todos los pedidos de compras locales, nacionales y de importación que se realizan en los proyectos contructivos hoteleros, dando además, seguimiento a todo el proceso y sus estados, circuito de firmas, aprobaciones, notificaciones, generación de informes, exportacion de tablas y métricas sobre los resultados en tiempo real.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Septiembre 2021</span></li>
+                                    <li>Cliente - <span>Proyecto Hotelero Centro Histórico La Habana, Cuba</span></li>
+                                    <li>Tecnologías - <span>HTML, CSS, JS, Bootstrap, ExtJS4, Laravel, MSSQL</span></li>
+                                    <li>Web - <span>Privada</span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+                <div class="portfolio-item" 
+                    data-category="aplicación-web"
+                    data-mode="freelancer"
+                    data-rol="desarrollador-full-stack">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/negolution/image-1.png" 
+                                data-screenshots="img/projects/negolution/image-2.png,
+                                    img/projects/negolution/image-3.png">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">Negolution.com</h3>
+                            <h5>Directorio de Emprendimientos</h5>
+                            <div class="icons">
+                                <a href="https://negolution.com" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-web"></i>
+                                    <span class="tooltiptext">Visitar Web</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>Negolution.com es un blog que brinda visibilidad y contexto de los emprendimientos que emergen en Cuba y los organiza en un Directorio de Emprendimientos y Emprendedores con los que puede tener contacto de manera rápida y efectiva. </p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Abril 2022</span></li>
+                                    <li>Cliente - <span>Negolution, Cuba</span></li>
+                                    <li>Tecnologías - <span>HTML, CSS, JS, Bootstrap, JQuery, Wordpress, MySQL</span></li>
+                                    <li>Web - <span><a href="https://negolution.com" target="_blank">negolution.com</a></span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+                <div class="portfolio-item" 
+                    data-category="aplicación-web"
+                    data-mode="freelancer"
+                    data-rol="desarrollador-full-stack">
+                    <div class="portfolio-item-inner outer-shadow">
+                        <div class="image portfolio-item-image">
+                            <img 
+                                src="img/projects/gateways/image-1.png" 
+                                data-screenshots="img/projects/gateways/image-2.png,
+                                    img/projects/gateways/image-3.png,
+                                    img/projects/gateways/image-4.png,
+                                    img/projects/gateways/image-5.png">
+                        </div>
+                        <div class="hover-items">
+                            <h3 class="portfolio-item-title">Gateways</h3>
+                            <h5>Ejercicio Práctico con Next.js</h5>
+                            <div class="icons">
+                                <a href="https://github.com/semtidev/nextjs-gateways" target="_blank" class="icon tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-web"></i>
+                                    <span class="tooltiptext">Visitar Código</span>
+                                </a>
+                                <a href="javascript:void(0);" 
+                                    class="icon project-detail tooltip tooltip-contrast">
+                                    <i class="mdi mdi-24px mdi-dots-horizontal"></i>
+                                    <span class="tooltiptext">Ver Detalles</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ========== Start portfolio item details ========== -->
+                        <div class="portfolio-item-details">
+                            <div class="row">
+                            <div class="description">
+                                <h3>Resumen/ </h3>
+                                <p>Gateways App es un ejercicio práctico, desarrollado en el framework Next.js, que brinda una solución a cualquier necesidad de este tipo dentro de un proyecto de adminstración de red en una empresa.</p>
+                            </div>
+                            <div class="info">
+                                <h3>Información/</h3>
+                                <ul>
+                                    <li>Fecha - <span>Mayo 2023</span></li>
+                                    <li>Cliente - <span>MusalaSoft, Bulgaria</span></li>
+                                    <li>Tecnologías - <span>HTML, CSS, JS, Tailwind, Next.js, LocalStorage</span></li>
+                                    <li>Web - <span>Localhost</span></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- ========== End portfolio item details ========== -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="img/port6.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Create Your Own Website
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Become an Expert in Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog2.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Become a Web Designer in 10 Days
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Debbuging made easy with Web Inspector
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Get started with Web Design and UI Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                This is what you need to know about Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="mdi mdi-24px mdi-map-marker"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p>
+                                    : London, united Kingdom
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="mdi mdi-24px mdi-email"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span>: maclinzuniversal@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="mdi mdi-24px mdi-account-school"></i>
+                                    <span>Education</span>
+                                </div>
+                                <p>
+                                    <span>: Sussex University, East Sussex</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="mdi mdi-24px mdi-account-school"></i>
+                                    <span>Mobile Number</span>
+                                </div>
+                                <p>
+                                    <span>: 07522670617</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="mdi mdi-24px mdi-translate-variant"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p>
+                                    <span>: Afrikaans, English, Spanish</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="www.facebook.com" target="_blank">
+                                    <i class="mdi mdi-24px mdi-facebook"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="mdi mdi-24px mdi-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="mdi mdi-24px mdi-github"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="mdi mdi-24px mdi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="YOUR NAME">
+                                <input type="email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <a href="#" class="main-btn">
+                                    <span class="btn-text">Download CV</span>
+                                    <span class="btn-icon"><i class="mdi mdi-24px mdi-cloud-download"></i></span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Start portfolio popup ========== -->
+        <div class="pp portfolio-popup">
+            <div class="pp-details">
+              <div class="pp-details-inner">
+                <div class="pp-title">
+                    <h2>Portfolio Personal</h2>
+                    <p>
+                        <span>
+                            Categoría/ <span class="pp-project-category">Applicación Web</span>
+                        </span>
+                        <span style="margin-left: 30px;">
+                            Modalidad/ <span class="pp-project-mode">Freelancer</span>
+                        </span>
+                        <span style="margin-left: 30px;">
+                            Rol/ <span class="pp-project-rol">Desarrollador Full Stack</span>
+                        </span>
+                    </p>
+                </div>
+                <div class="pp-project-details">
+                  <div class="row">
+                    <div class="description">
+                      <h3>Proyecto/ <span class="pp-project-name">TCP.Contable</span> </h3>
+                      <p>Sistema de Contabilidad simplificada para trabajadores por cuenta propia (TCP), que gestiona las Entradas, Salidas, Modelos, Comprobantes, Inventario del patrimonio y ejecicios contables más comunes y fiscalizados. Cuenta, además, con una base legal que asesora a sus usuarios en el correcto ejecicio de sus actividades económicas respectivas.</p>
+                    </div>
+                    <div class="info">
+                      <h3>Información/</h3>
+                      <ul>
+                        <li>Fecha - <span>Enero 2020</span></li>
+                        <li>Cliente - <span>TCP</span></li>
+                        <li>Tecnologías - <span>HTML, CSS, JS, ExtJS 4, Laravel 8</span></li>
+                        <li>Web - <span>Privada</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="separator"></div>
+  
+            <div class="pp-main">
+              <div class="pp-main-inner">
+                <div class="pp-project-details-btn outer-shadow hover-in-shadow">
+                    Detalles del Proyecto<i class="mdi mdi-24px mdi-plus"></i>
+                </div>
+                <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
+                <img src="img/projects/tcp.contable/image-2.jpg" alt="img" class="pp-img outer-shadow">
+                <div class="pp-counter">1 de 6</div>
+              </div>
+              <div class="pp-loader">
+                <div class="loader"></div>
+              </div>
+              <!-- ========== Start pp navigation ========== -->
+              <div class="pp-pre"><i class="mdi mdi-arrow-left-circle"></i></div>
+              <div class="pp-next"><i class="mdi mdi-arrow-right-circle"></i></div>
+              <!-- ========== End pp navigation ========== -->
+            </div>
+          </div>
+      <!-- ========== End portfolio popup ========== -->
+    </main>
+
+    <div class="controls">
+        <div class="control tooltip active-btn" data-id="home" >
+            <i class="mdi mdi-24px mdi-home"></i>
+            <span class="tooltiptext">Semtidev</span>
+        </div>
+        <div class="control tooltip" data-id="portfolio">
+            <i class="mdi mdi-24px mdi-briefcase-variant"></i>
+            <span class="tooltiptext">Portfolio</span>
+        </div>
+        <div class="control tooltip" data-id="about">
+            <i class="mdi mdi-24px mdi-account"></i>
+            <span class="tooltiptext">Acerca de...</span>
+        </div>        
+        <!--<div class="control tooltip" data-id="blogs">
+            <i class="mdi mdi-24px mdi-newspaper"></i>
+            <span class="tooltiptext">Artículos</span>
+        </div>-->
+        <div class="control tooltip" data-id="contact">
+            <i class="mdi mdi-24px mdi-email"></i>
+            <span class="tooltiptext">Contacto</span>
+        </div>
+    </div>
+    <div class="theme-btn" v-on:click.stop="changeMode">
+        <i class="mdi mdi-24px" :class="modeIcon"></i>
+    </div>
+    
+    <!-- JavaScript libraries -->
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="vue.global.prod.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
